@@ -794,7 +794,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 2 */}
   <FaqItem
     question={{
-      icon: '📶',
       text: lang === 'id' ? 'Apakah ada sinyal atau internet?' : 'Is there phone signal or internet?'
     }}
     answer={
@@ -809,7 +808,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 3 */}
   <FaqItem
     question={{
-      icon: '🥾',
       text: lang === 'id' ? 'Berapa lama trekking menuju Wae Rebo?' : 'How long is the trek to Wae Rebo?'
     }}
     answer={
@@ -824,7 +822,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 4 */}
   <FaqItem
     question={{
-      icon: '🧥',
       text: lang === 'id' ? 'Bagaimana suhu udara di Wae Rebo?' : 'What is the temperature like?'
     }}
     answer={
@@ -839,7 +836,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 5 */}
   <FaqItem
     question={{
-      icon: '🧭',
       text: lang === 'id' ? 'Apakah harus menggunakan pemandu lokal?' : 'Do I need a local guide?'
     }}
     answer={
