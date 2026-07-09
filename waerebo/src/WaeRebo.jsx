@@ -67,6 +67,7 @@ export default function WaeReboPage() {
   // =======================================
 
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const galleryPrevRef = useRef(null);
   const galleryNextRef = useRef(null);
   const [openFaq, setOpenFaq] = React.useState(null); // null = semua tutup
@@ -161,12 +162,26 @@ export default function WaeReboPage() {
             <span>{lang === 'id' ? 'ID' : 'EN'}</span>
           </button>
 
-          <div className="md:hidden flex flex-col gap-1.5 cursor-pointer">
-            <span className="w-6 h-0.5 bg-white block"></span>
-            <span className="w-6 h-0.5 bg-white block"></span>
-            <span className="w-6 h-0.5 bg-white block"></span>
+                    <div
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden flex flex-col gap-1.5 cursor-pointer"
+          >
+            <span className="w-6 h-0.5 bg-white"></span>
+            <span className="w-6 h-0.5 bg-white"></span>
+            <span className="w-6 h-0.5 bg-white"></span>
           </div>
         </div>
+
+        {menuOpen && (
+  <div className="md:hidden absolute top-full left-0 w-full bg-[#06291d] shadow-lg">
+    <a href="#home" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Home</a>
+    <a href="#tentang" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Tentang</a>
+    <a href="#budaya" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Budaya</a>
+    <a href="#wisata" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Wisata</a>
+    <a href="#galeri" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Galeri</a>
+    <a href="#informasi" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Informasi</a>
+  </div>
+)}
       </nav>
 
       {/* HOME SECTION */}
