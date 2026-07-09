@@ -422,18 +422,30 @@ export default function WaeReboPage() {
       {lang === 'id' ? 'Kekayaan Budaya' : 'Cultural Heritage'}
     </h2>
 
-    <Swiper
-      modules={[Navigation, Autoplay]}
-      slidesPerView={3}
-      spaceBetween={30}
-      navigation
-      loop
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
-      className="budayaSwiper"
-    >
+<Swiper
+  modules={[Navigation, Autoplay]}
+  navigation
+  loop
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }}
+  className="budayaSwiper"
+>
       {/* Card 1 */}
       <SwiperSlide>
         <div className="group bg-black/20 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
