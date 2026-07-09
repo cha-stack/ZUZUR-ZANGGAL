@@ -780,7 +780,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 1 */}
   <FaqItem
     question={{
-      icon: '⚡',
       text: lang === 'id' ? 'Apakah ada listrik di Wae Rebo?' : 'Is there electricity in Wae Rebo?'
     }}
     answer={
