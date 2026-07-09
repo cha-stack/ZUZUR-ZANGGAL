@@ -103,14 +103,14 @@ export default function WaeReboPage() {
       {/* NAVBAR */}
       <nav
           id="navbar"
-          className={`fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center text-white
+          className={`fixed w-full z-50 transition-all duration-300 py-5 px-6 md:px-12 flex justify-between items-center text-white
             ${isScrolled 
               ? "bg-[#06291d]" 
               : "bg-transparent"
             }`}
         >
           <div className="text-xl font-bold tracking-widest">WAE REBO.</div>
-        <ul className="hidden md:flex gap-8 text-sm font-medium">
+        <ul className="hidden md:flex mr-20 gap-10 text-sm font-medium">
           <li>
             <a
               href="#home"
@@ -565,7 +565,7 @@ export default function WaeReboPage() {
      {/* WISATA SECTION */}
 <section
   id="wisata"
-  className="py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto bg-gradient-to-b from-[#18230F] via-[#18230F] to-[#1a2510]"
+  className="py-24 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#18230F] via-[#18230F] to-[#1a2510]"
 >
   <div className="text-center mb-16">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-white mb-4">
@@ -692,7 +692,7 @@ export default function WaeReboPage() {
 </section>
 
 {/* GALERI SECTION */}
-<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24 bg-[#1a2510] overflow-hidden">
+<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24  bg-[#1a2510] overflow-hidden">
   <div className="max-w-7xl mx-auto">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-center mb-12 text-white">
       {lang === 'id' ? 'Galeri' : 'Gallery'}
