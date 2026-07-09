@@ -9,10 +9,10 @@ import masyarakat from "./assets/masyarakat.png";
 import tariancaci from "./assets/tariancaci.png";
 import tenun from "./assets/tenun.png";
 import alam from "./assets/alam.png";
-import wr1 from "./assets/wr1.jpg";
+import wr1 from "./assets/wr1.jpeg";
 import wr2 from "./assets/wr2.jpg";
 import wr3 from "./assets/wr3.jpg";
-import wr4 from "./assets/wr4.jpg";
+import wr4 from "./assets/wr4.jpeg";
 import wr5 from "./assets/wr5.jpg";
 
 import "swiper/css";
@@ -39,6 +39,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
           </svg>
         </span>
       </div>
+      
 
       {/* Jawaban — muncul dengan animasi smooth */}
       <div 
