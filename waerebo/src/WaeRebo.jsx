@@ -1043,7 +1043,9 @@ export default function WaeReboPage() {
           </div>
         </div>
             <div className="mt-10 pt-5 border-t border-white/10 text-center text-gray-500 text-sm">
-              © 2026 Wae Rebo Explorer
+              © 2026 Waescape by Zuzur Zanggal.
+                <br />
+  All rights reserved.
             </div>
           </div>
         </footer>
