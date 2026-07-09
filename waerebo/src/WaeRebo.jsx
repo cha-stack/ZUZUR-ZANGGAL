@@ -161,17 +161,14 @@ export default function WaeReboPage() {
             <span>{lang === 'id' ? '🇮🇩' : '🇬🇧'}</span>
             <span>{lang === 'id' ? 'ID' : 'EN'}</span>
           </button>
-
-                    <div
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex flex-col gap-1.5 cursor-pointer"
-          >
-            <span className="w-6 h-0.5 bg-white"></span>
-            <span className="w-6 h-0.5 bg-white"></span>
-            <span className="w-6 h-0.5 bg-white"></span>
-          </div>
+        <div
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex flex-col gap-1.5 cursor-pointer"
+        >
+          <span className="w-6 h-0.5 bg-white"></span>
+          <span className="w-6 h-0.5 bg-white"></span>
+          <span className="w-6 h-0.5 bg-white"></span>
         </div>
-
         {menuOpen && (
   <div className="md:hidden absolute top-full left-0 w-full bg-[#06291d] shadow-lg">
     <a href="#home" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Home</a>
@@ -182,6 +179,7 @@ export default function WaeReboPage() {
     <a href="#informasi" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Informasi</a>
   </div>
 )}
+        </div>
       </nav>
 
       {/* HOME SECTION */}
@@ -681,7 +679,7 @@ export default function WaeReboPage() {
 </section>
 
 {/* GALERI SECTION */}
-<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24 bg-[#1a2510] overflow-hidden">
+<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24 bg-[#18230F] overflow-hidden">
   <div className="max-w-7xl mx-auto">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-center mb-12 text-white">
       {lang === 'id' ? 'Galeri' : 'Gallery'}
