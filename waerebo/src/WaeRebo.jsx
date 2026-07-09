@@ -850,7 +850,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 6 */}
   <FaqItem
     question={{
-      icon: '🏡',
       text: lang === 'id' ? 'Apakah bisa menginap di Wae Rebo?' : 'Can visitors stay overnight?'
     }}
     answer={
@@ -865,7 +864,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 7 */}
   <FaqItem
     question={{
-      icon: '🎒',
       text: lang === 'id' ? 'Apa yang sebaiknya dibawa saat berkunjung?' : 'What should I bring?'
     }}
     answer={
@@ -880,7 +878,6 @@ export default function WaeReboPage() {
   {/* FAQ Item 8 */}
   <FaqItem
     question={{
-      icon: '🙏',
       text: lang === 'id' ? 'Apa aturan yang harus dipatuhi saat berkunjung?' : 'Are there any rules for visitors?'
     }}
     answer={
