@@ -249,7 +249,7 @@ export default function WaeReboPage() {
               {/* --- BAGIAN 1: Teks Kiri, Foto Kanan --- */}
               <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <div className="order-2 lg:order-1 text-gray-200">
-                  <h3 className="text-3xl font-bold text-amber-400 mb-6">
+                  <h3 className="text-3xl font-bold text-amber-400 mb-2">
                     {lang === 'id' ? 'Sejarah Singkat Wae Rebo' : 'Brief History of Wae Rebo'}
                   </h3>
                   <p className="leading-8 text-justify">
@@ -294,7 +294,7 @@ export default function WaeReboPage() {
                   />
                 </div>
                 <div className="order-2 lg:order-2 text-gray-200 lg:pl-8">
-                  <h3 className="text-3xl font-bold text-amber-400 mb-6">
+                  <h3 className="text-3xl font-bold text-amber-400 mb-2">
                     {lang === 'id' ? 'Asal Nama Wae Rebo' : 'Origin of the Name Wae Rebo'}
                   </h3>
                   <p className="leading-8 text-justify">
@@ -330,7 +330,7 @@ export default function WaeReboPage() {
               {/* --- BAGIAN 3: Teks Kiri (Penghargaan), Foto Kanan --- */}
               <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <div className="order-2 lg:order-1 text-gray-200">
-                  <h3 className="text-3xl font-bold text-amber-400 mb-2">
+                  <h3 className="text-3xl font-bold text-amber-400 mb-2 ">
                     {lang === 'id' ? 'Penghargaan' : 'Awards'}
                   </h3>
                   <p className="mb-6 text-gray-300">
@@ -1000,13 +1000,13 @@ export default function WaeReboPage() {
             rel="noopener noreferrer"
             className="w-full md:w-auto bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 px-6 rounded-lg transition-all text-sm text-center shadow-md hover:shadow-lg"
           >
-            {lang === 'id' ? ' Hubungi Sekarang' : '💬 Contact Now'}
+            {lang === 'id' ? ' Hubungi Sekarang' : ' Contact Now'}
           </a>
         </div>
 
         {/* Catatan Reservasi */}
         <div className="mt-4 flex items-center gap-2 text-xs text-gray-400 border-t border-white/5 pt-4">
-          <span>📌</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-milestone-icon lucide-milestone"><path d="M12 13v8"/><path d="M12 3v3"/><path d="M18.172 6a2 2 0 0 1 1.414.586l2.06 2.06a1.207 1.207 0 0 1 0 1.708l-2.06 2.06a2 2 0 0 1-1.414.586H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"/></svg>
           <span>
             {lang === 'id' 
               ? 'Reservasi sebaiknya dilakukan H-1' 
