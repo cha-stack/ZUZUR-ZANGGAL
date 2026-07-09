@@ -171,12 +171,12 @@ export default function WaeReboPage() {
         </div>
         {menuOpen && (
   <div className="md:hidden absolute top-full left-0 w-full bg-[#06291d] shadow-lg">
-    <a href="#home" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Home</a>
-    <a href="#tentang" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Tentang</a>
-    <a href="#budaya" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Budaya</a>
-    <a href="#wisata" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Wisata</a>
-    <a href="#galeri" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Galeri</a>
-    <a href="#informasi" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">Informasi</a>
+    <a href="#home" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Home' : 'Home'}</a>
+    <a href="#tentang" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Tentang' : 'About'}</a>
+    <a href="#budaya" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Budaya' : 'Culture'}</a>
+    <a href="#wisata" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Wisata' : 'Tourism'}</a>
+    <a href="#galeri" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Galeri' : 'Gallery'}</a>
+    <a href="#informasi" onClick={()=>setMenuOpen(false)} className="block px-6 py-4">{lang === 'id' ? 'Informasi' : 'Information'}</a>
   </div>
 )}
         </div>
