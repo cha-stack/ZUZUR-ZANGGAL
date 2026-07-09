@@ -927,7 +927,7 @@ export default function WaeReboPage() {
           </h3>
         </div>
 
-        <p className="text-gray-300 text-sm leading-relaxed mb-3">
+        <p className="text-gray-300 text-sm leading-relaxed mb-3 text-justify">
           {lang === 'id'
             ? 'Satar Lenda, Kecamatan Satar Mese Barat, Kabupaten Manggarai, Nusa Tenggara Timur.'
             : 'Satar Lenda, West Satar Mese District, Manggarai Regency, East Nusa Tenggara.'}
@@ -968,7 +968,7 @@ export default function WaeReboPage() {
           </h3>
         </div>
 
-        <p className="text-gray-300 text-sm leading-relaxed mb-3 text-left">
+        <p className="text-gray-300 text-sm leading-relaxed mb-3 text-justify">
           {lang === 'id'
             ? 'Untuk mengunjungi Wae Rebo, disarankan menyewa pemandu lokal dari Desa Denge.'
             : 'To visit Wae Rebo, it is recommended to hire a local guide from Denge Village.'}
