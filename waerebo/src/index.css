@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-darker: #27391C;
+  --color-darkest: #18230F;
+  --color-accent: #255F38;
+  --color-dim: #1F7D53;
+}
+
+.budayaSwiper {
+  padding: 20px 10px 40px;
+}
+
+.budayaSwiper,
+.budayaSwiper .swiper-wrapper,
+.budayaSwiper .swiper-slide {
+  overflow: visible !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-darker) !important;
+}
