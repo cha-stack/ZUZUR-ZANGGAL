@@ -242,7 +242,7 @@ export default function WaeReboPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-white">
                 {lang === 'id' ? 'Desa Adat Wae Rebo' : 'Wae Rebo Traditional Village'}
               </h2>
-              <div className="w-24 h-1 bg-amber-400 mx-auto mt-5 rounded-full"></div>
+              <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
             </div>
 
             <div className="flex flex-col gap-20">
@@ -421,6 +421,7 @@ export default function WaeReboPage() {
   <div className="max-w-7xl mx-auto">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-center mb-12">
       {lang === 'id' ? 'Kekayaan Budaya' : 'Cultural Heritage'}
+      <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
     </h2>
 
 <Swiper
@@ -570,6 +571,7 @@ export default function WaeReboPage() {
   <div className="text-center mb-16">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-white mb-4">
       {lang === 'id' ? 'Wisata Alam & Edukasi' : 'Nature & Educational Tourism'}
+      <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
     </h2>
 
     <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -601,11 +603,11 @@ export default function WaeReboPage() {
 
       </div>
 
-      <h3 className="text-2xl font-bold text-amber-500 mb-4">
+      <h3 className="text-xl font-bold text-amber-500 mb-4">
         {lang === 'id' ? 'Trekking' : 'Trekking'}
       </h3>
 
-      <p className="text-gray-300 leading-relaxed">
+      <p className="text-gray-300 leading-relaxed text-sm text-justify">
         {lang === 'id'
           ? 'Perjalanan mendaki selama 2-3 jam melewati hutan tropis, sungai, jembatan bambu, dan panorama pegunungan hingga tiba di Desa Wae Rebo.'
           : 'A 2-3 hour trek through tropical forests, rivers, bamboo bridges, and mountain panoramas to reach Wae Rebo Village.'
@@ -635,11 +637,11 @@ export default function WaeReboPage() {
 
       </div>
 
-      <h3 className="text-2xl font-bold text-amber-500 mb-4">
+      <h3 className="text-xl font-bold text-amber-500 mb-4">
         {lang === 'id' ? 'Kopi Wae Rebo' : 'Wae Rebo Coffee'}
       </h3>
 
-      <p className="text-gray-300 leading-relaxed">
+      <p className="text-gray-300 leading-relaxed text-sm text-justify">
         {lang === 'id'
           ? 'Nikmati kopi Arabika dan Robusta yang dipetik langsung oleh masyarakat, kemudian diolah menggunakan metode tradisional khas Manggarai.'
           : 'Enjoy Arabica and Robusta coffee picked directly by the community and processed using traditional Manggarai methods.'
@@ -675,11 +677,11 @@ export default function WaeReboPage() {
 
       </div>
 
-      <h3 className="text-2xl font-bold text-amber-500 mb-4">
+      <h3 className="text-xl font-bold text-amber-500 mb-4">
         {lang === 'id' ? 'Menginap di Mbaru Niang' : 'Stay at Mbaru Niang'}
       </h3>
 
-      <p className="text-gray-300 leading-relaxed">
+      <p className="text-gray-300 leading-relaxed text-sm text-justify">
         {lang === 'id'
           ? 'Rasakan pengalaman bermalam di rumah adat Mbaru Niang, ditemani kehangatan tungku api serta keramahan masyarakat lokal.'
           : 'Experience staying overnight in a Mbaru Niang traditional house, accompanied by the warmth of a fireplace and local hospitality.'
@@ -696,6 +698,7 @@ export default function WaeReboPage() {
   <div className="max-w-7xl mx-auto">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-center mb-12 text-white">
       {lang === 'id' ? 'Galeri' : 'Gallery'}
+      <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
     </h2>
 
     <Swiper
@@ -791,7 +794,7 @@ export default function WaeReboPage() {
       <h2 className="text-3xl md:text-4xl font-bold text-white">
         {lang === 'id' ? 'Informasi Penting' : 'Important Information'}
       </h2>
-      <div className="w-24 h-1 bg-amber-400 mx-auto mt-5 rounded-full"></div>
+      <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
     </div>
 
     {/* ===== FAQ ACCORDION — LEBAR PENUH DI ATAS ===== */}
@@ -921,8 +924,8 @@ export default function WaeReboPage() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* LOKASI — KIRI */}
       <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-3 hover:border-amber-500/50 transition-all flex flex-col">
-        <div className="flex items justify-center gap-3 mb-4">
-          <h3 className="text-xl font-bold text-white text-center">
+        <div className="flex items justify-center gap-3 mb-4 ">
+          <h3 className="text-xl font-bold text-white text-center border-b-2 border-amber-400 pb-2">
             {lang === 'id' ? 'Lokasi' : 'Location'}
           </h3>
         </div>
@@ -935,14 +938,18 @@ export default function WaeReboPage() {
 
         {/* Rute perjalanan */}
         <div className="bg-black/30 rounded-xl p-4 mb-4 border border-white/5">
-          <div className="flex items-center gap-2 text-sm text-gray-300 flex-wrap">
-            <span className="text-amber-400">✈️</span>
+          <div className="flex items-center gap-7 text-sm text-gray-300 flex-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plane-takeoff-icon lucide-plane-takeoff"><path d="M2 22h20"/><path d="M6.36 17.4 4 17l-2-4 1.1-.55a2 2 0 0 1 1.8 0l.17.1a2 2 0 0 0 1.8 0L8 12 5 6l.9-.45a2 2 0 0 1 2.09.2l4.02 3a2 2 0 0 0 2.1.2l4.19-2.06a2.41 2.41 0 0 1 1.73-.17L21 7a1.4 1.4 0 0 1 .87 1.99l-.38.76c-.23.46-.6.84-1.07 1.08L7.58 17.2a2 2 0 0 1-1.22.18Z"/></svg>
             <span>Labuan Bajo</span>
+
             <span className="text-gray-500">→</span>
-            <span className="text-amber-400">🚗</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
             <span>Denge</span>
+
             <span className="text-gray-500">→</span>
-            <span className="text-amber-400">🥾</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mountain-snow-icon lucide-mountain-snow"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/><path d="M4.14 15.08c2.62-1.57 5.24-1.43 7.86.42 2.74 1.94 5.49 2 8.23.19"/></svg>
             <span className="font-semibold text-white">Trekking</span>
           </div>
         </div>
@@ -963,7 +970,7 @@ export default function WaeReboPage() {
       {/* KONTAK & RESERVASI — KANAN */}
       <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-3 hover:border-amber-500/50 transition-all flex flex-col">
         <div className="flex items justify-center gap-3 mb-4">
-          <h3 className="text-xl font-bold text-white text-center">
+          <h3 className="text-xl font-bold text-white text-center border-b-2 border-amber-400 pb-2">
             {lang === 'id' ? 'Kontak & Reservasi' : 'Contact & Reservation'}
           </h3>
         </div>
@@ -976,8 +983,8 @@ export default function WaeReboPage() {
 
         {/* Card Pemandu */}
         <div className="bg-black/30 rounded-xl p-4 border border-white/5 flex items-center gap-4 flex-wrap">
-          <div className="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl border border-amber-500/30 flex-shrink-0">
-            👤
+          <div className="w-12 h-12 ...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="3 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
           </div>
           <div className="flex-1 min-w-[140px]">
             <p className="text-white font-semibold text-sm">
@@ -993,7 +1000,7 @@ export default function WaeReboPage() {
             rel="noopener noreferrer"
             className="w-full md:w-auto bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 px-6 rounded-lg transition-all text-sm text-center shadow-md hover:shadow-lg"
           >
-            {lang === 'id' ? '💬 Hubungi Sekarang' : '💬 Contact Now'}
+            {lang === 'id' ? ' Hubungi Sekarang' : '💬 Contact Now'}
           </a>
         </div>
 
