@@ -666,7 +666,7 @@ export default function WaeReboPage() {
 </section>
 
 {/* GALERI SECTION */}
-<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24 bg-[#18230F] overflow-hidden">
+<section id="galeri" className="py-24 px-6 md:px-12 lg:px-24 bg-[#1a2510] overflow-hidden">
   <div className="max-w-7xl mx-auto">
     <h2 className="reveal text-3xl md:text-4xl font-bold text-center mb-12 text-white">
       {lang === 'id' ? 'Galeri' : 'Gallery'}
