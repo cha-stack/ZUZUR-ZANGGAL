@@ -192,7 +192,7 @@ export default function WaeReboPage() {
           <h2 className="subtitle fade-up text-lg md:text-xl font-normal tracking-wide mb-2 text-amber-500">
             {lang === 'id' ? 'Flores, Nusa Tenggara Timur' : 'Flores, East Nusa Tenggara'}
           </h2>
-          <h1 className="title fade-up font-bold text-5xl md:text-8xl leading-tight mb-4">
+          <h1 className="title fade-up font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight mb-4">
             {lang === 'id' ? 'Desa di Atas' : 'Village Above'} <br />
             {lang === 'id' ? 'Awan' : 'the Clouds'}
           </h1>
@@ -274,7 +274,7 @@ export default function WaeReboPage() {
                   <img
                     src={alam}
                     alt="Pemandangan Alam Wae Rebo"
-                    className="w-full h-[350px] lg:h-[400px] object-cover rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
+                    className="w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] object-cover rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
                   />
                 </div>
               </div>
@@ -285,12 +285,12 @@ export default function WaeReboPage() {
                   <img
                     src={tariancaci}
                     alt="Tarian Caci"
-                    className="w-full h-[250px] lg:h-[350px] object-cover rounded-2xl shadow-xl hover:scale-[1.03] transition duration-500"
+                    className="w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] object-cover rounded-2xl shadow-xl hover:scale-[1.03] transition duration-500"
                   />
                   <img
                     src={upacarapenti}
                     alt="Upacara Penti"
-                    className="w-full h-[250px] lg:h-[350px] object-cover rounded-2xl shadow-xl hover:scale-[1.03] transition duration-500"
+                    className="w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] object-cover rounded-2xl shadow-xl hover:scale-[1.03] transition duration-500"
                   />
                 </div>
                 <div className="order-2 lg:order-2 text-gray-200 lg:pl-8">
