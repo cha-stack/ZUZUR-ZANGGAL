@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
+import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
 
 import background from "./assets/backgroud.png";
 import mbaruniang from "./assets/mbaruniang.png";
@@ -425,30 +425,28 @@ export default function WaeReboPage() {
     </h2>
 
 <Swiper
-  modules={[Autoplay, EffectCoverflow]}  
-  effect="coverflow"                    
-  grabCursor={true}                       
-  centeredSlides={true}                 
-  slidesPerView={3}                   
-  loop={true}
-  watchSlidesProgress={true}             
-  speed={500}                           
+  modules={[Navigation, Autoplay]}
+  navigation
+  loop
   autoplay={{
-    delay: 2500,                         
+    delay: 3000,
     disableOnInteraction: false,
   }}
-  coverflowEffect={{                     
-    rotate: 20,
-    stretch: 0,
-    depth: 150,
-    modifier: 1.5,
-    slideShadows: true,
-  }}
   breakpoints={{
-    0: { slidesPerView: 1 },
-    640: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   }}
+  className="budayaSwiper"
 >
       {/* Card 1 */}
       <SwiperSlide>
@@ -562,16 +560,6 @@ export default function WaeReboPage() {
         </div>
       </SwiperSlide>
     </Swiper>
-{/* Keterangan swipe - SAMA PERSIS KAYAK GALERI */}
-<div className="flex items-center justify-center gap-3 mt-8 text-gray-400">
-  <svg className="w-5 h-5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-  </svg>
-  <p className="text-sm tracking-wide uppercase">
-    {lang === 'id' ? 'Geser untuk melihat budaya' : 'Swipe to explore culture'}
-  </p>
-</div>
-
   </div>
 </section>
 
