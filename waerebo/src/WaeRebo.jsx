@@ -239,7 +239,7 @@ export default function WaeReboPage() {
               <p className="text-amber-400 tracking-[5px] uppercase text-sm mb-3">
                 {lang === 'id' ? 'Tentang' : 'About'}
               </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
                 {lang === 'id' ? 'Desa Adat Wae Rebo' : 'Wae Rebo Traditional Village'}
               </h2>
               <div className="w-1/4 h-1 bg-amber-400 mx-auto mt-2 rounded-full"></div>
