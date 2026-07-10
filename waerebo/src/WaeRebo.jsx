@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
 
 import background from "./assets/backgroud.png";
 import mbaruniang from "./assets/mbaruniang.png";
@@ -425,9 +425,9 @@ export default function WaeReboPage() {
     </h2>
 
 <Swiper
-  modules={[Navigation, Autoplay]}
-  navigation
+  modules={[Autoplay]}
   loop
+  centeredSlides={true}
   autoplay={{
     delay: 3000,
     disableOnInteraction: false,
@@ -560,6 +560,15 @@ export default function WaeReboPage() {
         </div>
       </SwiperSlide>
     </Swiper>
+    {/* Keterangan swipe - SAMA PERSIS KAYAK GALERI */}
+<div className="flex items-center justify-center gap-3 mt-8 text-gray-400">
+  <svg className="w-5 h-5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+  </svg>
+  <p className="text-sm tracking-wide uppercase">
+    {lang === 'id' ? 'Geser untuk melihat budaya' : 'Swipe to explore culture'}
+  </p>
+</div>
   </div>
 </section>
 
